@@ -8,11 +8,14 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 require("local-time").start()
+require("custom/material-kit")
 
 window.Rails = Rails
 
 import 'bootstrap'
 import 'data-confirm-modal'
+import 'moment'
+import 'nouislider'
 
 $(document).on("turbolinks:load", () => {
   $('[data-toggle="tooltip"]').tooltip()
